@@ -155,11 +155,9 @@
       </p>
       <div class="content has-text-justified mt-4">
         <p>
-          <!-- 예시 텍스트: EPISODE에 대한 상세 설명을 여기에 작성하세요 -->
-          EPISODE 프레임워크는 두 사람의 대화 내 공유된 경험을 메모리로 저장하고, 대화가 진행될 때마다
-          해당 메모리를 불러와 자연스럽게 참조함으로써 장기 대화를 보다 일관되고 풍부하게 만듭니다.
-          예컨대, A와 B가 과거 여행 경험을 나눈 후 EPISODE는 “지난 여름 호수 캠핑” 메모리를 활용해
-          관련 질문이나 이야기 전개를 지원합니다.
+          EPISODE is a long‑term dialogue framework that leverages both the ongoing conversation context and a structured set of memories encompassing each speaker’s persona information, personal events, and shared experiences 
+. During a session, a memory selector component identifies the most relevant memories—including a fallback for everyday conversational language—and a response generator produces the next utterance based on the selected memories and the current dialogue context 
+. After the session concludes, an asynchronous memory management pipeline processes the dialogue to extract new persona attributes, individual and mutual events, and implicit shared recollections. The memory update module then refines the memory repository by accumulating independent information, merging temporally or causally linked details, resolving conflicts between old and new information, and eliminating duplicates. Through this integration of dynamic memory retrieval and robust asynchronous maintenance, EPISODE enhances dialogue coherence, engagement, and adaptability across multi‑session interactions.
         </p>
     </div>
 
